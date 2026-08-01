@@ -1,0 +1,25 @@
+description: Ultralytics best model trained on E:\AI\datasets\yolo\bola_merah_hijau_air_label\data.yaml
+author: Ultralytics
+date: '2026-08-01T01:44:07.597478'
+version: 8.4.104
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+head: Detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: greenball
+  1: redball
+args:
+  data: null
+  batch: 1
+  fraction: 1.0
+  quantize: 16
+  dynamic: false
+  nms: false
+channels: 3
+end2end: false
