@@ -661,7 +661,8 @@ if __name__ == "__main__":
 #
 # 6. PUBLISH VIA RTMP (mis. server MediaMTX tim sudah jalan, port 1935)
 # python asv_navigator_dual_cam.py --model-atas .../best_openvino_model/ --model-bawah .../bluebox_v1/weights/best_openvino_model/ --source-atas 0 --source-bawah 1 --publish --headless --protocol rtmp --mediamtx-host 10.3.22.145 --mediamtx-port 1935
-#
+# python asv_navigator_dual_cam.py --model-atas runs/detect/runs/asv_ball_experiments/asv_greenredball_v2/weights/best_openvino_model/ --source-atas 1 --publish --protocol rtmp --mediamtx-host 10.3.22.145 --mediamtx-port 1935
+
 # CARA NONTON HASIL STREAM DI SISI DARAT (laptop GCS/tim), --stream-name default 'asv':
 # - VLC / ffplay (RTSP) : rtsp://<ip-mediamtx>:8554/asv-atas  dan/atau  rtsp://<ip-mediamtx>:8554/asv-bawah
 # - VLC / ffplay (RTMP) : rtmp://<ip-mediamtx>:1935/asv-atas  dan/atau  rtmp://<ip-mediamtx>:1935/asv-bawah
