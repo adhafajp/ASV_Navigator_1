@@ -38,6 +38,7 @@ def run_asv(model_path, source, source2=None, imgsz_arg=None, publish=False, med
     else:
         cap.set(cv2.CAP_PROP_FRAME_WIDTH, TARGET_WIDTH)
         cap.set(cv2.CAP_PROP_FRAME_HEIGHT, TARGET_HEIGHT)
+        cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
 
     # Initialize cap2
     cap2 = None
@@ -58,6 +59,7 @@ def run_asv(model_path, source, source2=None, imgsz_arg=None, publish=False, med
         else:
             cap2.set(cv2.CAP_PROP_FRAME_WIDTH, TARGET_WIDTH)
             cap2.set(cv2.CAP_PROP_FRAME_HEIGHT, TARGET_HEIGHT)
+            cap2.set(cv2.CAP_PROP_BUFFERSIZE, 1)
 
     w = TARGET_WIDTH
     h = TARGET_HEIGHT
